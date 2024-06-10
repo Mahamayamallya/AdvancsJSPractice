@@ -1,3 +1,43 @@
+/* const countToTen = (num = 1) => {
+  while (num <= 10) {
+    console.log(num);
+    num++;
+  }
+};
+
+countToTen();
+
+//recursive
+
+const countToTenRec = (num = 1) => {
+  if (num <= 10) {
+    console.log(num);
+    num++;
+    countToTenRec(num);
+  } else return;
+};
+
+countToTenRec();
+-------------------------------------------------------
+
+const fib = (num, array = [0, 1]) => {
+  if (array.length >= num) {
+    return array;
+  }
+  const [nextToLast, last] = array.slice(-2);
+  console.log(`nextToLast ${nextToLast}`);
+  console.log(`last ${last}`);
+  return fib(num, [...array, nextToLast + last]);
+};
+
+const result = fib(5);
+console.log(result);
+--------------------------------------------------------
+
+*/
+
+
+
 function fibonacci(n) {
   if (n <= 1) {
     return n;
